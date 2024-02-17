@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gema's Dolls</title>
+    <link rel="stylesheet" href="dolls.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <h1><a href="index.html">Gema's Dolls</a></h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dolls.html">Dolls</a></li>
+            <li><a href="clothing.html">Clothing for the Dolls</a></li>
+            <li><a href="dollcare.html">Doll Care</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+   <!-- anadir secciones  -->
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-container">
+    <div class="contact-form">
+        <form action="submit_contact_form.php" method="POST">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="subject">Subject:</label><br>
+            <input type="text" id="subject" name="subject"><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div class="contact-info">
+        <p>Email: info@gemasdolls.com</p>
+        <p>Phone: 123-456-7890</p>
+        <p>Address: 123 Doll Street, Toyland</p>
+        <!-- Add social media links here -->
+    </div>
+</section>
+</body>
+<footer>
+  <p>&copy; 2024 Gema's Dolls. All rights reserved.</p>
+</footer>
+</html>

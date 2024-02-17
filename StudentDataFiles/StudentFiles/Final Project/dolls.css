@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+}
+
+body { 
+    background-color: #E4D9C7; 
+    color: #666666;
+    font-family: Arial, Verdana, sans-serif; 
+    margin: 0;
+}
+
+header { 
+    background-color: #021422; 
+    color: #FFFFFF;
+    font-family: Georgia, sans-serif; 
+    padding: 1em;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.logo {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-bottom: 0.5em; /* espacio logo */
+}
+
+.logo img {
+    max-width: 10%;
+    height: auto;
+   
+}
+
+header a { 
+    text-decoration: none; 
+}
+
+
+header a:link { 
+    color: #FFFFFF; 
+}
+
+header a:visited {
+    color: #FFFFFF;
+}
+
+header a:hover {
+    color: #90c7e3;
+}
+h1 {
+    margin: 0; 
+}
+
+nav {    
+    padding-top: .5em;
+    padding-right: .5em;
+    padding-bottom: .5em;
+    text-align: center;
+    font-size: 1.2em;
+    background-color: #FFFFFF;
+}
+
+nav a { 
+    text-decoration: none; 
+}
+
+nav a:link { 
+    color: #5c7fa3; 
+}
+
+nav a:visited { 
+    color: #344873; 
+}
+
+nav a:hover { 
+    color: #a52a2a; 
+}
+
+nav ul { 
+    flex-direction: column;
+    margin: 0;
+    list-style-type: none; 
+    padding-left: 0; 
+    font-weight: bold;
+}
+
+nav li { 
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    border-bottom: 1px solid; 
+}
+
+footer {  
+    font-size: .70em;
+    font-style: italic; 
+    text-align: center;
+    padding: 1em;
+    background-color: #FFFFFF;
+}
+
+#wrapper { 
+    margin-left: auto;
+    margin-right: auto; 
+    background-color: #FFFFFF;
+}
+
+main { 
+    padding-left: 2em;
+    padding-right: 2em;
+    display: block;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 1em;
+    padding-right: 1em; 
+}
+
+@media (min-width: 600px) {
+    h1 { 
+        letter-spacing: .25em; 
+        font-size: 2em;
+        text-align: center; 
+    }
+
+    h2 {
+        text-align: center; /* Center-align the h2 elements */
+    }
+    
+    nav ul { 
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around; 
+        padding-right: 2em;
+        margin: 0;
+        list-style-type: none;
+        padding-left: 0; 
+    }
+    nav li { 
+        border-bottom: none;
+        width: 12em; 
+        padding-top: .5em;
+        padding-bottom: .5em;
+        padding-left: 1em;
+        padding-right: 1em; 
+    }
+    #mobile {
+        display: none; 
+    }
+    #desktop {
+        display: inline;
+    }
+}
+.contact-form {
+    margin: 0 auto; 
+    width: 50%; 
+    text-align: left; 
+}
+
+.contact-form form {
+    padding: 20px; 
+    background-color: #f9f9f9; 
+    border-radius: 5px; 
+}
+
+.contact-form label,
+.contact-form input,
+.contact-form textarea {
+    display: block;
+    margin-bottom: 10px; 
+}
+
+.contact-form input[type="submit"] {
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 4px;
+    cursor: pointer; 
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #45a049; /*usar otro color */
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    max-height: 900px;/* arreglar */
+}
+
+.contact-form {
+    flex: 1;
+    max-width: 30%; /* arreglar */
+}
+
+  .contact-info {
+    margin-left: 20px; 
+    margin-right: 20px; /* arreglar*/
+}
+#videos {
+    text-align: center; /* Center-align the content within the section */
+}
+
+.video-container {
+    display: flex;
+    justify-content: center; /* Center-align the videos horizontally */
+    flex-wrap: wrap; /* Allow the videos to wrap to the next line if necessary */
+}
+
+.video-container iframe {
+    margin: 10px; /* Add some margin around each video */
+}
+footer {
+    position: fixed; /* Position the footer relative to the viewport */
+    bottom: 0; /* Align the bottom edge of the footer to the bottom of the viewport */
+    width: 100%; /* Make the footer span the entire width of the viewport */
+    font-size: .70em;
+    font-style: italic; 
+    text-align: center;
+    padding: 1em;
+    background-color: #FFFFFF;
+}
