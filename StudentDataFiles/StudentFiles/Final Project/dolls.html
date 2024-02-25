@@ -5,30 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gema's Dolls</title>
     <link rel="stylesheet" href="dolls.css">
+    <script src="carousel.js" defer></script>
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="logo.png" alt="Logo">
+            <a href="index.html">
+                <img src="logo2.png" alt="Logo">
+            </a>
         </div>
-        <h1><a href="index.html">Gema's Dolls</a></h1>
     </header>
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="dolls.html">Dolls</a></li>
-            <li><a href="clothing.html">Clothing for the Dolls</a></li>
+            <li>
+                <a href="dolls.html" class="active">Dolls</a>
+                <ul class="submenu">
+                    <li><a href="coquette.html">Coquette</a></li>
+                    <li><a href="gothic.html">Gothic</a></li>
+                    <li><a href="fairy.html">Fairy</a></li>
+                </ul>
+            </li>
+            <li><a href="clothing.html">Clothing</a></li>
             <li><a href="dollcare.html">Doll Care</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    <!-- anadir secciones  -->
-
-    <h1>Under Construction</h1>
-    <p>We apologize for the inconvenience. This page is currently under construction.</p>
+    <section id="carousel">
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <img src="coque.png" alt="Coquette Doll" width="400" height="200">
+                <h3>Coquette Dolls</h3>
+                <p>Explore our collection of charming coquette dolls, perfect for those who adore elegance and grace.</p>
+            </div>
+            <div class="carousel-slide">
+                <img src="dollg1.png" alt="Gothic Doll" width="400" height="200">
+                <h3>Gothic Dolls</h3>
+                <p>Discover our exquisite gothic dolls, each imbued with a sense of mystery and allure.</p>
+            </div>
+            <div class="carousel-slide">
+                <img src="forestdoll.png" alt="Forest Doll" width="400" height="200">
+                <h3>Fairy Dolls</h3>
+                <p>Embark on a journey with our enchanting fairy dolls, bringing magic and wonder into your home.</p>
+            </div>
+        </div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+    </section>
+    <footer>
+        <p>&copy; 2024 Gema's Dolls. All rights reserved.</p>
+    </footer>
 </body>
-<footer>
-    <p>&copy; 2024 Gema's Dolls. All rights reserved.</p>
-</footer>
 </html>
 
