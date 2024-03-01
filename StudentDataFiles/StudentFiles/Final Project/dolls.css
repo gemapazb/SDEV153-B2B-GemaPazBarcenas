@@ -108,13 +108,20 @@ nav li {
 nav li:hover .submenu {
     display: block; /* Display the submenu when hovering over the parent menu item */
 }
+.container {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow cards to wrap to the next line if needed */
+    justify-content: space-around; /* Distribute space evenly between cards */
+}
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
-    margin: auto;
+    margin: 20px; /* Add margin around each card */
     text-align: center;
     font-family: arial;
-  }
+    display: inline-block; /* Display cards inline */
+    vertical-align: top; /* Align cards to the top of the container */
+}
   
   .price {
     color: grey;
@@ -136,6 +143,7 @@ nav li:hover .submenu {
   .card button:hover {
     opacity: 0.7;
   }
+  
 #about {
     text-align: justify; 
     margin: 0 auto; 
@@ -191,6 +199,7 @@ button.prev, button.next {
     font-size: 18px;
     cursor: pointer;
 }
+
 
 button.prev {
     left: 0;

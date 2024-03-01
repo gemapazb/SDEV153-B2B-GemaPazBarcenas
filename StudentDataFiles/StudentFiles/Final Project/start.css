@@ -1,0 +1,48 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Garamond, sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .bg-image {
+    /* Full height */
+    height: 80%; 
+    
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Images used */
+  .img1 { background-image: url("https://cdn.midjourney.com/7b57884c-4584-4e5d-a6e3-0241bea45fbf/0_2.webp"); }
+  .img2 { background-image: url("https://cdn.midjourney.com/b991ea7c-531a-452d-90d3-1362c2a0156c/0_0.webp"); }
+  .img3 { background-image: url("https://cdn.midjourney.com/0e97bab1-b54a-4489-bd78-7f9ce65cdaa2/0_2.webp"); }
+  .img4 { background-image: url("https://cdn.midjourney.com/2387aef6-7dbd-4142-98e2-33fc9ccdb554/0_2.webp"); }
+  .img5 { background-image: url("https://cdn.midjourney.com/36683b0e-4440-4f8c-a2b6-b57df27d4129/0_2.webp"); }
+  .img6 { background-image: url("https://cdn.midjourney.com/9c708cbe-cf04-41de-bd3d-3fc9f4bec982/0_0.webp"); }
+  
+  /* Position text in the middle of the page/image */
+  .bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    font-size: 70px;
+    border: 10px solid #f1f1f1;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+  }
+  a {
+    text-decoration: none; /* Removes underline */
+  }
