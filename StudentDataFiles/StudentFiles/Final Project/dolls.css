@@ -2,21 +2,14 @@
     box-sizing: border-box;
 }
 
-body { 
-    background-color: #F5F5F5; /* Neutral background color */
-    color: #000000; /* Neutral text color */
-    font-family: 'Quicksand', sans-serif;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+body {
+    font-family: Arial, sans-serif;
+    padding: 10;
 }
 
-header { 
-    background-color: #FFFFFF; /* Dark neutral background color */
-    color: #FFFFFF; /* White text color */
-    font-family: Georgia, sans-serif; 
-    padding: 1em;
+header {
+    background-color: #f2f2f2;
+    padding: 20px;
 }
 
 h1 { 
@@ -25,7 +18,7 @@ h1 {
 }
 
 h2 { 
-    color: #344873;
+    color: #0a0b0e;
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -52,7 +45,7 @@ nav {
     text-align: center;
     font-family: "Helvetica Neue", Arial, sans-serif; /* Change font to a more elegant option */
     font-size: 1.2em;
-    background-color: #FFFFFF;
+    background-color: #f2f2f2;
 }
 
 nav a {     
@@ -61,16 +54,16 @@ nav a {
 }
 
 nav a.active {
-    color: #ed7b8a; /* Text color for the active menu item */
-    background-color: #f0f0f0; /* Background color for the active menu item */
+    color: #fc7b7b; /* Text color for the active menu item */
+    background-color: #f2f2f2; /* Background color for the active menu item */
     padding: 0.5em 1em; /* Adjust padding to create a square shape */
     display: inline-block; /* Ensures the square shape */
     border-radius: 5px; /* Adds rounded corners */
 }
 
 nav a:hover {
-    background-color: #f0f0f0; /* Background color for the menu item on hover */
-    color: #b22e3f; /* Text color for the menu item on hover */
+    background-color: #555; /* Background color for the menu item on hover */
+    color: #fc7b7b; /* Text color for the menu item on hover */
     padding: 0.5em 1.5em; /* Adjust padding to increase width on hover */
 }
 
@@ -80,6 +73,7 @@ nav ul {
     list-style-type: none; 
     padding-left: 0; 
     font-weight: bold;
+    background-color: #333;
 }
 
 nav li { 
@@ -92,16 +86,21 @@ nav li {
     border-bottom: 1px solid; 
 }
 
-
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;}
 
 .submenu {
     display: none; /* Hide the submenu by default */
     position: absolute; /* Position the submenu absolutely */
     top: 100%; /* Position the submenu below the parent menu item */
     left: 0; /* Align the submenu with the left edge of the parent menu item */
-    background-color: #FFFFFF; /* Background color of the submenu */
+    background-color: #555; /* Background color of the submenu */
     padding: 0.5em 0; /* Add padding to the submenu */
-    border: 1px solid #CCCCCC; /* Add a border to the submenu */
+    border: 1px solid #131111; /* Add a border to the submenu */
     z-index: 1; /* Ensure the submenu appears above other elements */
 }
 
@@ -109,18 +108,28 @@ nav li:hover .submenu {
     display: block; /* Display the submenu when hovering over the parent menu item */
 }
 .container {
-    display: flex; /* Use flexbox for layout */
-    flex-wrap: wrap; /* Allow cards to wrap to the next line if needed */
-    justify-content: space-around; /* Distribute space evenly between cards */
+    display: flex;
+    justify-content: center; /* Center the cards horizontally */
+    align-items: flex-start; /* Align the cards to the top */
+    margin: 0 auto; /* Center the container horizontally */
+    max-width: 1200px; /* Set a maximum width for the container */
 }
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    margin: 20px; /* Add margin around each card */
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 15px; /* Add margin around each card */
     text-align: center;
     font-family: arial;
     display: inline-block; /* Display cards inline */
     vertical-align: top; /* Align cards to the top of the container */
+    padding: 20px;
+}
+.card img {
+    width: 100%;
+    height: auto;
+}
+.card h1, .card p {
+    text-align: center;
 }
   
   .price {
@@ -143,16 +152,52 @@ nav li:hover .submenu {
   .card button:hover {
     opacity: 0.7;
   }
-  
-#about {
-    text-align: justify; 
-    margin: 0 auto; 
-    max-width: 800px; 
-    padding: 20px; 
+  .nadda-link {
+    color: #270ec6; /* Specify the color for the link */
+    text-decoration: bold; /* Optionally, remove underline */
 }
 
-#about p {
-    line-height: 2.6; 
+#home p {
+    line-height: 2.6; /* Adjust the line height for all paragraphs */
+    text-align: center; /* Center the text within the container */
+    margin: 0 auto; /* Center the paragraph horizontally */
+    max-width: 800px; /* Set a maximum width for the paragraph */
+    padding: 0 20px; /* Add some padding to the sides of the paragraph */
+
+}
+.about-section, .contact-container {
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+    padding: 0 20px; /* Add padding to separate the sections */
+}
+#about-content p {
+    line-height: 2.6; /* Adjust the line height for the paragraph */
+    text-align: center; /* Center the text within the container */
+
+}
+
+#about img {
+    max-width: 70%; /* Adjust the maximum width of the image */
+    display: block; /* Ensure the image is a block element */
+    margin: 0 auto 20px; /* Center the image horizontally and add some bottom margin */
+}
+.contact-container {
+    margin-top: 20px; /* Add margin to create space between sections */
+}
+.about-section {
+    float: left; /* Float the about section to the left */
+}
+
+.contact-section {
+    float: right; /* Float the contact section to the right */
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 #dollCareParagraph {
     font-size: 18px; /* Increase the font size for better readability */
@@ -160,7 +205,7 @@ nav li:hover .submenu {
     margin-bottom: 20px; /* Add some margin at the bottom to create space between paragraphs */
     margin: 60px; /* Add margin on all sides of the paragraph */
    padding: 60px; /* Add padding inside the paragraph for additional spacing */
-   border: 3px solid #ed7b8a; /* Add a border around the paragraph for a nice visual effect */
+   border: 3px solid #555; /* Add a border around the paragraph for a nice visual effect */
    border-radius: 10px; /* Add rounded corners to the border */
   }
 #carousel {
@@ -209,16 +254,11 @@ button.next {
     right: 0;
 }
 
-footer {
-    flex-shrink: 0; /* Prevent the footer from shrinking */
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    font-size: 1em;
-    text-align: center;
-    padding: 1em;
-    background-color: #FFFFFF;
-}
+ footer {
+            background-color: #f2f2f2;
+            padding: 10px;
+            text-align: center;
+        }
 
 #wrapper { 
     margin-left: auto;
@@ -246,10 +286,10 @@ main {
 
 /* Style the form container */
 form {
-    max-width: 400px;
+    max-width: 600px;
     margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
+    padding: 15px;
+    border: 2px solid #ccc;
     border-radius: 5px;
     background-color: #f9f9f9;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */

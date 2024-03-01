@@ -10,7 +10,7 @@ body, html {
   
   .bg-image {
     /* Full height */
-    height: 80%; 
+    height: 60%; 
     
     /* Center and scale the image nicely */
     background-position: center;
@@ -19,12 +19,12 @@ body, html {
   }
   
   /* Images used */
-  .img1 { background-image: url("https://cdn.midjourney.com/7b57884c-4584-4e5d-a6e3-0241bea45fbf/0_2.webp"); }
-  .img2 { background-image: url("https://cdn.midjourney.com/b991ea7c-531a-452d-90d3-1362c2a0156c/0_0.webp"); }
-  .img3 { background-image: url("https://cdn.midjourney.com/0e97bab1-b54a-4489-bd78-7f9ce65cdaa2/0_2.webp"); }
-  .img4 { background-image: url("https://cdn.midjourney.com/2387aef6-7dbd-4142-98e2-33fc9ccdb554/0_2.webp"); }
-  .img5 { background-image: url("https://cdn.midjourney.com/36683b0e-4440-4f8c-a2b6-b57df27d4129/0_2.webp"); }
-  .img6 { background-image: url("https://cdn.midjourney.com/9c708cbe-cf04-41de-bd3d-3fc9f4bec982/0_0.webp"); }
+  .img1 { background-image: url("https://cdn.midjourney.com/7b57884c-4584-4e5d-a6e3-0241bea45fbf/0_2.webp");background-position: 40% 40%; }
+  .img2 { background-image: url("https://cdn.midjourney.com/2387aef6-7dbd-4142-98e2-33fc9ccdb554/0_2.webp"); background-position: 40% 40%;}
+  .img3 { background-image: url("https://cdn.midjourney.com/dba19230-8ad8-42f2-b48a-b68706019f63/0_2.webp");background-position: 75% 75%; }
+  .img4 { background-image: url("https://cdn.midjourney.com/c3889b9b-3498-42fe-b9ff-bc9914742c42/0_3.webp"); background-position: 40% 40%;}
+  .img5 { background-image: url("https://cdn.midjourney.com/1053e319-0bb7-47f7-baca-5bb325ff2ca2/0_3.webp"); background-position: 80% 75%;}
+  .img6 { background-image: url("https://cdn.midjourney.com/c1a6bd67-d425-4025-95d6-bea2de2647bc/0_3.webp"); background-position: 40% 40%;}
   
   /* Position text in the middle of the page/image */
   .bg-text {
@@ -45,4 +45,11 @@ body, html {
   }
   a {
     text-decoration: none; /* Removes underline */
+  }
+  a:link {
+    color: white; /* Specify the color for unvisited links */
+  }
+  
+  a:visited {
+    color: white; /* Specify the color for visited links */
   }
